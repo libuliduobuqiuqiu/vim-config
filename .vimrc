@@ -13,7 +13,7 @@ set ruler
 set autoindent
 " 开启自动排版
 
-colorscheme slate
+colorscheme solarized8_dark_high
 " 更换主题
 
 syntax on
@@ -33,3 +33,12 @@ noremap <C-l> <C-w>l
 
 noremap <space> viw
 " 快速选中一个单词
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'mhinz/vim-startify'
+Plug 'Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
